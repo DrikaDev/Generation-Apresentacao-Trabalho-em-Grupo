@@ -12,7 +12,7 @@ body{
 }
 
 header{
-    background-image: url(/foto1.jpeg);
+    background-image: url(./img/foto1.jpeg);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: bottom;
@@ -124,7 +124,7 @@ header{
 }
 
 .seta{
-    width: 5rem;
+    width: 4rem;
 }
 
 .objetivo, .requisitos, .diagrama, .implementacao{
