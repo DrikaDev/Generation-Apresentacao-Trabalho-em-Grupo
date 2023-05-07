@@ -2,74 +2,65 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth;
-}
-
-body{
-    width: 100%;
-    height: auto;
     font-family: 'Open Sans', sans-serif;
-    display: flex;
-    flex-direction: column;
+    scroll-behavior: smooth;
 }
 
 header{
     background-image: url(./img/foto1.jpeg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     background-position: bottom;
-    width: 100%;
-    height: 47rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
 }
 
 .menu{
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    width: 65rem;
-    height: 17rem;
+    
 }
 
 .menu h1{
-    font-size: 3.7rem;
+    height: 10rem;
+    width: 100%;
+    font-size: 3.5rem;
     font-weight: bolder;
-    text-align: center;
     text-shadow: 5px 5px 20px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .menu ul{
+    width: 100%;
+    height: 10rem;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    width: 100%;
 }
 
 .menu li{
+    width: 17.5rem;
+    text-align: center;
     text-shadow: 5px 5px 20px black;
-    font-weight: bold;
     list-style: none;
-}
-
-.menu li:hover{
-    border-bottom: 3px solid black;
+    height: 3rem;
 }
 
 .menu a{
     font-size: 1.5rem;
+    font-weight: bold;
     text-decoration: none;
     color: white;
-    text-shadow: 5px 5px 5px black;
+    text-shadow: 0px 0px 5px black;
     transition: 1s all;
 }
 
 .menu a:hover{
-    font-size: 2rem;
-    transform: scale(1.2);
+    font-size: 1.8rem;
+    color:rgb(226, 140, 11);
+    transform: scale(1.1);
 }
 
 main{
@@ -77,7 +68,6 @@ main{
 }
 
 .integrantes_grupo{
-    margin: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -96,11 +86,15 @@ main{
     border-radius: 10px;
     box-shadow: 5px 5px 10px black;
     display: flex;
-    flex-direction: row-reverse;
-    margin: 5rem;
+    flex-direction: row;
+    margin-bottom: 5rem;
     text-align: center;
-    width: 60rem;
+    width: 80%;
     transition: 1s all;
+}
+
+.integrantes:nth-child(even){
+    flex-direction: row-reverse;
 }
 
 .integrantes:hover{
@@ -113,9 +107,9 @@ main{
 }
 
 .integrantes p{
-    font-size: 1.3rem;
-    margin: 1rem;
-    line-height: 2.5rem;
+    font-size: 1rem;
+    padding: 1rem;
+    line-height: 2rem;
 }
 
 .integrantes img{
@@ -142,27 +136,31 @@ main{
     background-color: white;
     border-radius: 10px;
     box-shadow: 5px 5px 20px black;
-    margin: 4rem;
     text-align: center;
-    width: 70%;
-    margin-top: 10rem;
-    margin-bottom: 10rem;
+    margin: 2rem;
 }
 
 .objetivo h2, .requisitos h2, .diagrama h2, .implementacao h2{
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin: 2rem;
     text-shadow: 5px 5px 20px black;
 }
 
 .objetivo p, .requisitos p, .diagrama p, .implementacao p{
-    font-size: 1.8rem;
-    margin: 1rem;
-    line-height: 3rem;
+    font-size: 1.3rem;
+    margin: 1.5rem;
+    line-height: 2rem;
+}
+
+.diagrama div img{
+    border: solid black;
+    border-radius: 10px;
+    margin: 3rem;
 }
 
 footer{
     text-align: center;
+    height: 3rem;
 }
 
 footer svg{
